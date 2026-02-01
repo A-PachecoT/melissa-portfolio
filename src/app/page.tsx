@@ -190,32 +190,32 @@ const experience = [
 const projects = [
   {
     name: "InfoJobs",
-    description: "Landing page para el portal de empleo #1 de Europa",
+    description: "Landing page para el portal de empleo más reconocido en Europa",
     tech: "Astro + Tailwind CSS",
   },
   {
     name: "Warmi Ventures",
-    description: "Incubadora de startups para emprendedoras",
+    description: "Incubadora de startups que ayuda a emprendedoras a desarrollar sus ideas",
     tech: "Astro + React",
   },
   {
     name: "Genera",
-    description: "Materiales educativos con inteligencia artificial",
+    description: "Genera materiales educativos de alta calidad con inteligencia artificial",
     tech: "NextJS",
   },
   {
     name: "Ecommerce",
-    description: "Plataforma de comercio electrónico completa",
+    description: "Plataforma con carrito de compras, filtrado de productos y diseño responsive",
     tech: "React",
   },
   {
     name: "Acecom",
-    description: "Web de asociación estudiantil UNI",
+    description: "Asociación de estudiantes de la Facultad de Ciencias de la UNI",
     tech: "Remix",
   },
   {
     name: "Cepre Smart",
-    description: "Startup de educación preuniversitaria",
+    description: "Startup enfocada en la educación preuniversitaria",
     tech: "HTML, CSS, Bootstrap",
   },
 ];
@@ -299,16 +299,16 @@ export default function Home() {
                 <StarIcon />
                 <span className="font-semibold">CONTACTO:</span>
               </div>
-              <a href="mailto:melissa@melissaiman.com" className="pl-5 flex items-center gap-2 hover:underline">
+              <a href="mailto:melissaimannoriega@gmail.com" className="pl-5 flex items-center gap-2 hover:underline">
                 <EmailIcon />
-                melissa@melissaiman.com
+                melissaimannoriega@gmail.com
               </a>
 
               <div className="flex items-center gap-2 mt-4">
                 <StarIcon />
                 <span className="font-semibold">WEB:</span>
               </div>
-              <a href="https://melissaiman.com" target="_blank" rel="noopener noreferrer" className="pl-5 flex items-center gap-2 hover:underline">
+              <a href="https://www.melissaiman.com" target="_blank" rel="noopener noreferrer" className="pl-5 flex items-center gap-2 hover:underline">
                 <WebIcon />
                 melissaiman.com
               </a>
@@ -354,7 +354,7 @@ export default function Home() {
               <div className="section-box mb-4">REDES</div>
               <div className="flex flex-wrap gap-3 md:gap-4">
                 <a
-                  href="https://linkedin.com/in/melissa-iman"
+                  href="https://www.linkedin.com/in/melissa-iman-noriega-118a95228/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline"
@@ -363,7 +363,7 @@ export default function Home() {
                   <span className="text-sm">LinkedIn</span>
                 </a>
                 <a
-                  href="https://github.com/melissaiman"
+                  href="https://github.com/Melissa1221"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:underline"
@@ -372,7 +372,7 @@ export default function Home() {
                   <span className="text-sm">GitHub</span>
                 </a>
                 <a
-                  href="mailto:melissa@melissaiman.com"
+                  href="mailto:melissaimannoriega@gmail.com"
                   className="flex items-center gap-2 hover:underline"
                 >
                   <EmailIcon />
@@ -603,13 +603,13 @@ export default function Home() {
               </p>
               <div className="flex gap-4 flex-wrap">
                 <a
-                  href="mailto:melissa@melissaiman.com"
+                  href="mailto:melissaimannoriega@gmail.com"
                   className="btn-primary"
                 >
                   Contáctame
                 </a>
                 <a
-                  href="https://linkedin.com/in/melissa-iman"
+                  href="https://www.linkedin.com/in/melissa-iman-noriega-118a95228/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary"
