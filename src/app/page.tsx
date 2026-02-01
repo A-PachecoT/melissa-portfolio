@@ -267,10 +267,10 @@ export default function Home() {
       <main className="max-w-5xl mx-auto px-4 py-8 md:py-12">
         {/* Hero Section */}
         <section className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-4 md:gap-8 mb-6 md:mb-12">
-          {/* Left Column - Photo & Contact */}
-          <div className="space-y-6">
+          {/* Left Column - Photo & Contact (order-2 on mobile, order-1 on desktop) */}
+          <div className="space-y-6 order-2 md:order-1">
             {/* Profile Photo with Parallax */}
-            <div className="hero-animate hero-delay-1 relative parallax-container">
+            <div className="hero-animate hero-delay-1 relative parallax-container max-w-[220px] mx-auto md:max-w-none">
               <div className="frame overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
                 <img
                   src="./images/profile-1-final.png"
@@ -280,12 +280,12 @@ export default function Home() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <span className="decoration-star -top-4 -left-4 float-animate">✦</span>
-              <span className="decoration-star -bottom-4 -right-4 float-animate-slow" style={{ animationDelay: "0.7s" }}>✦</span>
+              <span className="decoration-star -top-4 -left-4 float-animate hidden md:block">✦</span>
+              <span className="decoration-star -bottom-4 -right-4 float-animate-slow hidden md:block" style={{ animationDelay: "0.7s" }}>✦</span>
             </div>
 
-            {/* Contact Info */}
-            <div className="hero-animate hero-delay-2 space-y-3 text-sm">
+            {/* Contact Info - hidden on mobile, shown on desktop */}
+            <div className="hero-animate hero-delay-2 space-y-3 text-sm hidden md:block">
               <div className="flex items-center gap-2">
                 <StarIcon />
                 <span className="font-semibold">UBICACIÓN:</span>
@@ -315,8 +315,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Column - Name & About */}
-          <div className="space-y-6">
+          {/* Right Column - Name & About (order-1 on mobile, order-2 on desktop) */}
+          <div className="space-y-4 md:space-y-6 order-1 md:order-2">
             {/* Name */}
             <div className="hero-animate hero-delay-1">
               <h1
@@ -334,7 +334,7 @@ export default function Home() {
             </div>
 
             {/* Headline */}
-            <p className="hero-animate hero-delay-2 text-lg font-medium">
+            <p className="hero-animate hero-delay-2 text-sm sm:text-base md:text-lg font-medium">
               Software Developer | CEO @ Bilio AI | Cofoundy | Maker Fellow | Computer Science @ UNI
             </p>
 
@@ -352,7 +352,7 @@ export default function Home() {
             {/* Socials */}
             <div className="hero-animate hero-delay-4">
               <div className="section-box mb-4">REDES</div>
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-3 md:gap-4">
                 <a
                   href="https://linkedin.com/in/melissa-iman"
                   target="_blank"
@@ -360,7 +360,7 @@ export default function Home() {
                   className="flex items-center gap-2 hover:underline"
                 >
                   <LinkedInIcon />
-                  <span className="text-sm">linkedin.com/in/melissa-iman</span>
+                  <span className="text-sm">LinkedIn</span>
                 </a>
                 <a
                   href="https://github.com/melissaiman"
@@ -370,6 +370,13 @@ export default function Home() {
                 >
                   <GitHubIcon />
                   <span className="text-sm">GitHub</span>
+                </a>
+                <a
+                  href="mailto:melissa@melissaiman.com"
+                  className="flex items-center gap-2 hover:underline"
+                >
+                  <EmailIcon />
+                  <span className="text-sm">Email</span>
                 </a>
               </div>
             </div>
