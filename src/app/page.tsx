@@ -266,7 +266,7 @@ export default function Home() {
 
       <main className="max-w-5xl mx-auto px-4 py-8 md:py-12">
         {/* Hero Section */}
-        <section className="grid md:grid-cols-[300px_1fr] gap-8 mb-12">
+        <section className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-4 md:gap-8 mb-6 md:mb-12">
           {/* Left Column - Photo & Contact */}
           <div className="space-y-6">
             {/* Profile Photo with Parallax */}
@@ -320,13 +320,13 @@ export default function Home() {
             {/* Name */}
             <div className="hero-animate hero-delay-1">
               <h1
-                className="text-5xl md:text-6xl lg:text-7xl font-bold italic"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold italic"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 Melissa
               </h1>
               <h2
-                className="text-4xl md:text-5xl lg:text-6xl font-bold italic ml-8 md:ml-12"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold italic ml-4 sm:ml-6 md:ml-10"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 Iman Noriega
@@ -377,7 +377,7 @@ export default function Home() {
         </section>
 
         {/* Education & Languages Row */}
-        <section className="grid md:grid-cols-2 gap-8 mb-12">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-6 md:mb-12">
           {/* Education */}
           <div className="scroll-slide-left">
             <div className="section-box mb-4">EDUCACIÓN</div>
@@ -418,9 +418,9 @@ export default function Home() {
         </section>
 
         {/* Experience Section */}
-        <section className="mb-12">
-          <div className="section-box mb-6">EXPERIENCIA</div>
-          <div className="grid md:grid-cols-2 gap-4">
+        <section className="mb-6 md:mb-12">
+          <div className="section-box mb-4 md:mb-6">EXPERIENCIA</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
             {experience.map((exp, i) => (
               <div
                 key={exp.company}
@@ -441,8 +441,8 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section className="mb-12">
-          <div className="grid md:grid-cols-[1fr_1fr] gap-8">
+        <section className="mb-6 md:mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             {/* Technical Skills */}
             <div className="scroll-slide-left">
               <div className="section-box mb-4">SKILLS</div>
@@ -468,7 +468,7 @@ export default function Home() {
             {/* Skill Circles */}
             <div className="scroll-slide-right">
               <div className="section-box mb-4">HERRAMIENTAS</div>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
                 {[
                   { name: "React", level: 90, color: "#E8A5A5" },
                   { name: "NextJS", level: 85, color: "#D68F8F" },
@@ -485,7 +485,7 @@ export default function Home() {
                         border: "2px solid black"
                       }}
                     >
-                      <div className="w-14 h-14 bg-[#F5E6E8] rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#F5E6E8] rounded-full flex items-center justify-center text-xs sm:text-sm">
                         {tool.level}%
                       </div>
                     </div>
@@ -498,9 +498,9 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section className="mb-12">
-          <div className="section-box mb-6">PROYECTOS</div>
-          <div className="grid md:grid-cols-3 gap-4">
+        <section className="mb-6 md:mb-12">
+          <div className="section-box mb-4 md:mb-6">PROYECTOS</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
             {projects.map((project, i) => (
               <div
                 key={project.name}
@@ -521,7 +521,7 @@ export default function Home() {
         </section>
 
         {/* Certifications & Highlight */}
-        <section className="grid md:grid-cols-2 gap-8 mb-12">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-6 md:mb-12">
           {/* Certifications */}
           <div className="scroll-slide-left">
             <div className="section-box mb-4">CERTIFICACIONES</div>
@@ -557,9 +557,9 @@ export default function Home() {
         </section>
 
         {/* Organizations */}
-        <section className="mb-12">
+        <section className="mb-6 md:mb-12">
           <div className="section-box mb-4">ORGANIZACIONES</div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2 md:gap-3">
             {[
               "Acecom - Asoc. Científica Especializada en Computación",
               "Comunidad Académica DSC UNI - IBM",
@@ -579,12 +579,12 @@ export default function Home() {
         </section>
 
         {/* CTA Section with Second Photo */}
-        <section className="mb-12 scroll-scale">
-          <div className="grid md:grid-cols-[1fr_280px] gap-8 items-center">
+        <section className="mb-6 md:mb-12 scroll-scale">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-4 md:gap-8 items-center">
             {/* CTA Content */}
-            <div className="frame bg-white/50 p-8">
+            <div className="frame bg-white/50 p-4 sm:p-6 md:p-8">
               <h3
-                className="text-3xl font-bold italic mb-4"
+                className="text-xl sm:text-2xl md:text-3xl font-bold italic mb-4"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 ¿Trabajamos juntos?
