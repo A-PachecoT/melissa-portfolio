@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useCallback, useState } from "react";
 
 // Intersection Observer hook for scroll animations
@@ -272,13 +272,12 @@ export default function Home() {
             {/* Profile Photo with Parallax */}
             <div className="hero-animate hero-delay-1 relative parallax-container">
               <div className="frame overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
-                <Image
-                  src="/images/profile-1-final.png"
+                <img
+                  src="./images/profile-1-final.png"
                   alt="Melissa Iman Noriega"
                   width={300}
                   height={400}
                   className="w-full h-auto object-cover"
-                  priority
                 />
               </div>
               <span className="decoration-star -top-4 -left-4 float-animate">✦</span>
@@ -616,8 +615,8 @@ export default function Home() {
             {/* Second Photo */}
             <div className="hidden md:block">
               <div className="frame overflow-hidden">
-                <Image
-                  src="/images/profile-2-final.png"
+                <img
+                  src="./images/profile-2-final.png"
                   alt="Melissa Iman Noriega"
                   width={280}
                   height={450}
